@@ -16,3 +16,8 @@ scrape_configs:
     scrape_interval: 30s
     static_configs:
       - targets: ['backend.railway.internal:8081']
+
+  - job_name: 'availability_sync'
+    scrape_interval: 30s
+    static_configs:
+      - targets: ['37.27.2.66:8081']
